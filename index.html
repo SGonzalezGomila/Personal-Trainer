@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asesorías Personal Training</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sección de Inicio -->
+    <header class="inicio">
+        <nav>
+            <div class="logo">PT Wellness</div>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Asesorías Personalizadas para tu Bienestar Físico</h1>
+            <p>Transforma tu vida con entrenamientos adaptados a tus necesidades.</p>
+            <a href="#contacto" class="btn">Comienza Ahora</a>
+        </div>
+    </header>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios" class="servicios">
+        <h2>Nuestros Servicios</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Personalizado</h3>
+                <p>Entrenamientos diseñados específicamente para tus objetivos individuales.</p>
+                <button class="btn-info" data-modal="modal-personalizado">Más Información</button>
+            </div>
+            <div class="card">
+                <h3>Grupal</h3>
+                <p>Entrena con amigos en sesiones dinámicas y motivadoras.</p>
+                <button class="btn-info" data-modal="modal-grupal">Más Información</button>
+            </div>
+            <div class="card">
+                <h3>Personalizado Grupal</h3>
+                <p>Combina lo mejor de los entrenamientos personalizados y grupales.</p>
+                <button class="btn-info" data-modal="modal-personalizado-grupal">Más Información</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modales de Información -->
+    <div id="modal-personalizado" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Entrenamiento Personalizado</h3>
+            <p>El entrenamiento personalizado está diseñado para ajustarse a tus necesidades y objetivos específicos. Ofrecemos sesiones individuales con un plan adaptado a tu progreso.</p>
+        </div>
+    </div>
+
+    <div id="modal-grupal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Entrenamiento Grupal</h3>
+            <p>Las sesiones grupales son ideales para quienes buscan motivación extra. Entrena en grupo mientras disfrutas de la energía colectiva y alcanzas tus metas de forma divertida.</p>
+        </div>
+    </div>
+    <!-- Sección de Testimonios -->
+<section id="testimonios" class="testimonios">
+    <h2>Testimonios</h2>
+    <div class="testimonial-wrapper">
+        <div class="testimonial">
+            <p>"¡Los entrenamientos personalizados han transformado mi vida! El enfoque y la dedicación del entrenador son inigualables." - Ana M.</p>
+        </div>
+        <div class="testimonial">
+            <p>"Las sesiones grupales son muy motivadoras. Disfruto entrenar con amigos y alcanzar nuestras metas juntos." - Juan P.</p>
+        </div>
+        <div class="testimonial">
+            <p>"El entrenamiento personalizado grupal ha sido perfecto para nuestro grupo. La combinación de atención personalizada y motivación grupal es ideal." - Laura T.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Sección de FAQ -->
+<section id="faq" class="faq">
+    <h2>Preguntas Frecuentes</h2>
+    <div class="faq-wrapper">
+        <details>
+        <summary>¿Qué incluye un entrenamiento personalizado?</summary>
+        <p>Incluye una evaluación inicial, un plan de entrenamiento adaptado a tus objetivos y seguimiento continuo para ajustar el plan según sea necesario.</p>
+    </details>
+    <details>
+        <summary>¿Cómo funcionan las sesiones grupales?</summary>
+        <p>Las sesiones grupales se realizan con un grupo de personas que comparten objetivos similares. Se diseñan para ser dinámicas y motivadoras.</p>
+    </details>
+    <details>
+        <summary>¿Qué es el entrenamiento personalizado grupal?</summary>
+        <p>Es una combinación de atención personalizada dentro de un entorno grupal. Obtienes un plan adaptado a tus necesidades pero con la motivación del grupo.</p>
+    </details>
+    </div>
+    
+</section>
+
+    <div id="modal-personalizado-grupal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Entrenamiento Personalizado Grupal</h3>
+            <img url="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.es%2Ffotos-vectores-gratis%2Fpersonas-corriendo&psig=AOvVaw3SIGL1kFA6qOPoMsJZ7oj-&ust=1725932748671000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLC3jtTetIgDFQAAAAAdAAAAABAE" alt="">
+            <p>Disfruta de lo mejor de ambos mundos con entrenamientos grupales personalizados. Ideal para grupos pequeños que desean atención especializada sin perder la motivación del grupo.</p>
+        </div>
+    </div>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <div class="contact-info">
+            <div class="contact-links">
+                <a href="https://wa.me/1234567890" target="_blank">WhatsApp</a>
+                <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            </div>
+            <form action="mailto:tucorreo@ejemplo.com" method="post" enctype="text/plain">
+                <input type="text" name="nombre" placeholder="Tu Nombre" required>
+                <input type="email" name="email" placeholder="Tu Email" required>
+                <textarea name="mensaje" placeholder="Tu Mensaje" required></textarea>
+                <button type="submit" class="btn">Enviar Consulta</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 PT Wellness. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts.js"></script>
+</body>
+</html>
